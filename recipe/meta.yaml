@@ -1,5 +1,5 @@
 {% set name = "testmsm" %}
-{% set version = "3.8.3" %}
+{% set version = "3.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/testmsm-{{ version }}.tar.gz
-  sha256: 07e51d4a5a66d36beaf6a3905fcb31a7a1225a1cbb768552b6962c429d37f519
+  sha256: 0df29aa66d16ad5d1c816e5460b085f781209b391177acd3ab493b4d17505f2b
 
 build:
   entry_points:
@@ -21,10 +21,10 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - python 
+    - python
     - mdtraj
     - cython
-    - numpy 
+    - numpy
     - libgomp  # [linux]
   run:
     - python
@@ -42,7 +42,6 @@ requirements:
     - six
     - scipy
     - libgomp  # [linux]
-    
 test:
   imports:
     - msmbuilder
