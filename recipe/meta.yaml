@@ -68,7 +68,7 @@ test:
 
 
 about:
-  home: https://github.com/msmbuilder/msmbuilder
+  home: https://github.com/bojunliu0818/testmsm
   summary: 'MSMBuilder: Statistical models for Biomolecular Dynamics'
   license: LGPL-2.1
   license_file: LICENSE
