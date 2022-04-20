@@ -1,7 +1,7 @@
 About testmsm
 =============
 
-Home: https://github.com/msmbuilder/msmbuilder
+Home: https://github.com/bojunliu0818/testmsm
 
 Package license: LGPL-2.1
 
