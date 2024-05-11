@@ -13,11 +13,12 @@ build:
   entry_points:
     - msmb = msmbuilder.scripts.msmb:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - pip
