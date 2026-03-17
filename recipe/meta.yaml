@@ -6,18 +6,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/testmsm-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/testmsm-{{ version }}.tar.gz
   sha256: 0df29aa66d16ad5d1c816e5460b085f781209b391177acd3ab493b4d17505f2b
 
 build:
   entry_points:
     - msmb = msmbuilder.scripts.msmb:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - pip
